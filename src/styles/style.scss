@@ -1,0 +1,30 @@
+@import "./navbar";
+@import "./header";
+@import "./mainContent";
+@import "./mixins";
+@import "./variables";
+
+@mixin fontStyle {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.page--container {
+  display: flex;
+}
+
+.header--main--container {
+  margin: 40px 48px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .page--container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .header--main--container {
+    margin: 20px;
+  }
+}

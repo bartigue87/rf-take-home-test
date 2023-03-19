@@ -1,0 +1,107 @@
+@import "./mixins";
+@import "./variables";
+
+.header--container {
+  border-bottom: 1px solid #cccccc;
+  h2 {
+    @include fontStyle();
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: $primaryTextColor;
+    margin: 40px 0 16px;
+  }
+
+  p {
+    @include fontStyle();
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $primaryTextColor;
+    margin-bottom: 40px;
+  }
+}
+
+.logo--details--container {
+  @include flexAlignCenter();
+  gap: 16px;
+  img {
+    height: 89px;
+    width: 89px;
+  }
+  h1 {
+    margin: 0 0 4px;
+    @include fontStyle();
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: $primaryTextColor;
+  }
+  p {
+    margin: 4px 0 0;
+    @include fontStyle();
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.btn {
+  width: 115px;
+  height: 34px;
+  background: #5c00dc;
+  border-radius: 4px;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  right: 48px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .btn {
+    top: 140px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo--details--container {
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  .btn {
+    top: 190px;
+    left: 20px;
+    width: 90px;
+    height: 28px;
+    font-size: 10px;
+  }
+
+  .logo--details--container {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .header--container {
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    > p {
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

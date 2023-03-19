@@ -1,0 +1,9 @@
+@mixin fontStyle {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,548 @@
+.navbar--container {
+  width: 278px;
+  border-right: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account--nav {
+  width: 63px;
+  border-right: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav--logos--container {
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  gap: 4px;
+  top: 12px;
+  margin: 0 auto;
+}
+
+.nav--logos--container .rf--logo {
+  height: 64px;
+  width: 48px;
+}
+
+.nav--logos--container .event--logo {
+  height: 32px;
+  width: 32px;
+}
+
+.profile {
+  height: 32px;
+  width: 32px;
+  background-color: #444444;
+  color: #fff;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
+.event--nav {
+  width: 215px;
+  position: relative;
+}
+
+.event--nav--title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin: 20px 0 12px 16px;
+}
+
+.location--date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 12px 16px;
+}
+
+.searchbar {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  width: 183px;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  height: 24px;
+  border-radius: 4px;
+  color: #777777;
+  margin: 0 0 12px 16px;
+}
+
+.searchbar input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.searchbar img {
+  height: 11.66px;
+  width: 11.66px;
+  margin-left: 6px;
+}
+
+.nav--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  margin: 0 8px;
+  gap: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #777777;
+}
+
+.nav--item--active {
+  background-color: rgba(92, 0, 220, 0.08);
+  border-radius: 8px;
+  color: #5c00dc;
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  background-color: #777777;
+  border-radius: 15px;
+  margin-left: 12px;
+}
+
+.circle--active {
+  background: #5c00dc;
+}
+
+ul {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #777777;
+  padding: 0;
+  margin: 12px 56px 20px;
+}
+
+ul :first-child {
+  margin-top: 12px;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+  }
+  .account--nav {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 40px;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+  }
+  .nav--logos--container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    position: inherit;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+  .profile {
+    margin: 0;
+  }
+  .event--nav {
+    display: none;
+  }
+}
+
+.header--container {
+  border-bottom: 1px solid #cccccc;
+}
+
+.header--container h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 40px 0 16px;
+}
+
+.header--container p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.logo--details--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.logo--details--container img {
+  height: 89px;
+  width: 89px;
+}
+
+.logo--details--container h1 {
+  margin: 0 0 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.logo--details--container p {
+  margin: 4px 0 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.btn {
+  width: 115px;
+  height: 34px;
+  background: #5c00dc;
+  border-radius: 4px;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  right: 48px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .btn {
+    top: 140px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo--details--container h1 {
+    font-size: 20px;
+  }
+  .btn {
+    top: 190px;
+    left: 20px;
+    width: 90px;
+    height: 28px;
+    font-size: 10px;
+  }
+  .logo--details--container p {
+    font-size: 12px;
+  }
+  .header--container h2 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .header--container > p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.main--content--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.main--content--header img {
+  height: 35px;
+  width: 35px;
+}
+
+.main--content--header h3 {
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.step--header {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222222;
+  margin: 0 0 8px;
+}
+
+.single--card h5,
+.single--card p {
+  margin: 0;
+}
+
+.inner--container p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #222222;
+}
+
+.step1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #cccccc;
+  gap: 24px;
+  padding: 24px 0 18px 32px;
+  margin-bottom: 24px;
+}
+
+.step1 .single--card {
+  width: 221px;
+}
+
+.step--split .single--card {
+  min-height: 122px;
+}
+
+.step--split .inner--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 28px 32px;
+}
+
+.step--split .inner--container img {
+  height: 17px;
+  width: 15px;
+}
+
+.step--split .inner--container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12.5px;
+  margin-bottom: 8px;
+}
+
+.step2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 24px;
+  margin-bottom: 24px;
+}
+
+.step2 .single--card {
+  border: 1px solid #cccccc;
+}
+
+.add--card {
+  min-height: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
+}
+
+.add--card img {
+  height: 20px;
+  width: 20px;
+}
+
+.add--card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #222222;
+}
+
+.step3 .single--card {
+  border: 1px solid #cccccc;
+  width: 341.67px;
+}
+
+.step3 .single--card img {
+  height: 16px;
+  width: 24px;
+}
+
+h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+@media only screen and (max-width: 500px) {
+  .main--content--header {
+    gap: 12px;
+  }
+  .step1 {
+    padding: 12px 0 9px 16px;
+  }
+  .step--split .single--card {
+    min-height: inherit;
+  }
+  .step--split .inner--container {
+    margin: 14px 16px;
+  }
+  .add--card {
+    min-height: 75px;
+  }
+  .step3 .single--card {
+    width: inherit;
+  }
+}
+
+.page--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header--main--container {
+  margin: 40px 48px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .page--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+  }
+  .header--main--container {
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
