@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import NavItem from "./NavItem"
 import eventLogoSmall from "../assets/event-logo.png";
 import rainFocus from "../assets/rainfocus.png";
