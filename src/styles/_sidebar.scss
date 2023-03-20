@@ -50,6 +50,11 @@
   position: relative;
 }
 
+.icon,
+.hamburger {
+  display: none;
+}
+
 .event--nav--title {
   @include fontStyle();
   font-weight: 600;
@@ -140,6 +145,14 @@ ul {
   }
 }
 
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 @media only screen and (max-width: 900px) {
   .navbar--container {
     display: flex;
@@ -160,11 +173,46 @@ ul {
     margin: 0;
     position: inherit;
     justify-content: inherit;
+    width: initial;
   }
   .profile {
     margin: 0;
   }
   .event--nav {
-    display: none;
+    position: absolute;
+    width: 230px;
+    background-color: white;
+    height: 100%;
+    border-right: 1px solid black;
+    top: 0;
+    z-index: 1;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    border: 0;
+    height: 30%;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    display: block;
+    width: 30px;
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+  }
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .mobile {
+    display: none !important
   }
 }

@@ -78,6 +78,11 @@
   position: relative;
 }
 
+.icon,
+.hamburger {
+  display: none;
+}
+
 .event--nav--title {
   font-family: "Inter";
   font-style: normal;
@@ -187,6 +192,14 @@ ul li {
   margin-top: 16px;
 }
 
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 @media only screen and (max-width: 900px) {
   .navbar--container {
     display: -webkit-box;
@@ -220,11 +233,39 @@ ul li {
     -webkit-box-pack: inherit;
         -ms-flex-pack: inherit;
             justify-content: inherit;
+    width: initial;
   }
   .profile {
     margin: 0;
   }
   .event--nav {
+    position: absolute;
+    width: 230px;
+    background-color: white;
+    height: 100%;
+    border-right: 1px solid black;
+    top: 0;
+    z-index: 1;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    border: 0;
+    height: 30%;
+    top: 20px;
+    right: 10px;
+  }
+  .hamburger {
+    display: block;
+    width: 30px;
+    border: 0;
+    height: 30px;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
     display: none;
   }
 }
