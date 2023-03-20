@@ -145,14 +145,6 @@ ul {
   }
 }
 
-.mobile {
-  display: none;
-}
-
-.desktop {
-  display: block;
-}
-
 @media only screen and (max-width: 900px) {
   .navbar--container {
     display: flex;
@@ -182,10 +174,16 @@ ul {
     position: absolute;
     width: 230px;
     background-color: white;
-    height: 100%;
+    height: 100vh;
     border-right: 1px solid black;
     top: 0;
     z-index: 1;
+    transition: 1s;
+    transform: translateX(-100vw)
+  }
+
+  .mobile-nav {
+    transform: none
   }
 
   .icon {
@@ -206,13 +204,5 @@ ul {
     height: 30px;
     cursor: pointer;
   }
-  .desktop {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 901px) {
-  .mobile {
-    display: none !important
-  }
+  
 }
