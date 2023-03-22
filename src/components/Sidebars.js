@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import NavItem from "./NavItem"
+import NavItem from "./NavItem";
 import eventLogoSmall from "../assets/event-logo.png";
 import rainFocus from "../assets/rainfocus.png";
 import hamburgerIcon from "../assets/icon-hamburger.svg";
@@ -7,10 +7,10 @@ import closeIcon from "../assets/icon-close.svg";
 import glass from "../assets/mag-glass.png";
 
 export default function Sidebars() {
-  const navRef = useRef()
+  const navRef = useRef();
 
   function showNav() {
-    navRef.current.classList.toggle("mobile-nav")
+    navRef.current.classList.toggle("mobile-nav");
   }
 
   return (
@@ -36,39 +36,39 @@ export default function Sidebars() {
         <div className="profile">FL</div>
       </div>
       <div className="event--nav" ref={navRef}>
-      <button
-        className="icon"
-        style={{
-          backgroundImage: `url(${closeIcon})`,
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "transparent",
-        }}
-        onClick={showNav}
-      ></button>
-      <p className="event--nav--title">RainFocus Summit</p>
-      <p className="location--date">
-        Lehi, UT <span>• </span>
-        <span>December 15th</span>
-      </p>
-      <div className="searchbar">
-        <img src={glass} alt="magnifying glass" />
-        <input placeholder="Search" />
+        <button
+          className="icon"
+          style={{
+            backgroundImage: `url(${closeIcon})`,
+            backgroundRepeat: "no-repeat",
+            backgroundColor: "transparent",
+          }}
+          onClick={showNav}
+        ></button>
+        <p className="event--nav--title">RainFocus Summit</p>
+        <p className="location--date">
+          Lehi, UT <span>• </span>
+          <span>December 15th</span>
+        </p>
+        <div className="searchbar">
+          <img src={glass} alt="magnifying glass" />
+          <input placeholder="Search" />
+        </div>
+        <NavItem title="Guide" status="inactive" />
+        <NavItem
+          title="Attendees"
+          status="active"
+          items={[
+            "Attendees",
+            "Attendee types",
+            "Packages",
+            "Reg codes",
+            "Discounts",
+          ]}
+        />
+        <NavItem title="Content" status="inactive" />
+        <NavItem title="Exhibitors" status="inactive" />
       </div>
-      <NavItem title="Guide" status="inactive" />
-      <NavItem
-        title="Atendees"
-        status="active"
-        items={[
-          "Atendees",
-          "Atendee types",
-          "Packages",
-          "Reg codes",
-          "Discounts",
-        ]}
-      />
-      <NavItem title="Content" status="inactive" />
-      <NavItem title="Exhibitors" status="inactive" />
-    </div>
     </div>
   );
 }
