@@ -32,19 +32,19 @@ export default function MainContent() {
         <StepContent
           icon={arrowIcon}
           altText="arrow"
-          title="Atendee Registration"
+          title="Attendee Registration"
           description="Start by creating a general registration workflow"
         />
         <StepContent
           icon={arrowIcon}
           altText="arrow"
-          title="Atendee Registration"
+          title="Attendee Registration"
           description="Start by creating a general registration workflow"
         />
         <StepContent
           icon={arrowIcon}
           altText="arrow"
-          title="Atendee Registration"
+          title="Attendee Registration"
           description="Start by creating a general registration workflow"
         />
         <StepContent
